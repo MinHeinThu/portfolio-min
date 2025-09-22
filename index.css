@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* height: 200vh; */
+    font-family: Arial, sans-serif; 
+}
+
+/* Header */
+
+    /* height: 10vh; */
+    /* width: 100%;
+    color: #111827;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal; */
+    /* position: sticky;
+    top: 0; */
+header {
+    width: 100%;
+    color: #111827;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #F9FAFB;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.nav-ul {
+    /* height: 10vh; */
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F9FAFB;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 20px 0;
+    font-family: "Fira Sans", "Poppins", Arial, sans-serif;
+    letter-spacing: 1px;
+}
+li {
+    list-style-type: none;
+}
+
+/* Home */
+#home main {
+    margin-top: 40px;
+    min-height: 70vh;
+    display: flex;
+    min-height: 500px;
+    max-height: 600px;
+    width: 100%;
+    background-color: #F9FAFB;
+    color: #111827;
+}
+
+.intro {
+    width: 50%;
+    text-align: justify;
+    /* padding: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.intro h1 {
+    text-align: center;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+    font-family: "Roboto", "Poppins", Arial, sans-serif;
+    margin: 0 10px;
+}
+
+.profile {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border: 2px solid #d1d5db;
+    border-radius: 50%;
+    background-color: #394148;
+    padding: 16px;
+    object-fit: cover;
+}
+
+/* Skills */
+
+
+#skill {
+    min-height: 40vh;
+    margin-top: 60px;
+}
+
+/* #skill h1 {
+    text-align: center; */
+    /* padding: 40px;
+} */
+
+.flex-container2 {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+}
+
+.skills img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Projects */
+/* Experience */
+/* Contact */
+
+#contact {
+    background-color: #F9FAFB;
+}
+
+#contact div h2 {
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+a img {
+    width: 44px;
+    height: 44px; 
+}
+
+.contact-link {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 900px) {
+    #home main {
+        flex-direction: column;
+        min-height: 400px;
+        max-height: none;
+    }
+    .intro, .profile {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .profile-img {
+        width: 140px;
+        height: 140px;
+        padding: 10px;
+    }
+    .flex-container2 {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .skills {
+        margin-bottom: 16px;
+    }
+    .nav-ul {
+        font-size: 1rem;
+        height: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 1.4rem;
+        margin: 12px 0;
+    }
+    .intro p {
+        font-size: 1rem;
+    }
+    .nav-ul {
+        flex-direction: column;
+        height: auto;
+        padding: 8px 0;
+    }
+    .contact-link {
+        gap: 18px;
+    }
+}
