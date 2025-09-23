@@ -123,6 +123,7 @@ li {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding: 50px;
 }
 
 .skills {
@@ -166,6 +167,7 @@ a img {
     justify-content: center;
     align-items: center;
     gap: 32px;
+    padding: 50px;
 }
 
 /* Mobile Responsive Styles */
